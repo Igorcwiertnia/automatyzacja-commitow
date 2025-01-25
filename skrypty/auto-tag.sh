@@ -8,6 +8,7 @@ echo "Ostatnia wersja: $LAST_TAG"
 NEW_TAG=$(echo $LAST_TAG | awk -F. '{printf "v%d.%d.%d", $1, $2, $3+1}')
 echo "Nowa wersja: $NEW_TAG"
 
-# Tworzenie nowego tagu
+# wylacz hook pre-push na czas tagowania
+export GIT_PARAMS=""
 git tag -a "$NEW_TAG" -m "Nowa wersja: $NEW_TAG"
 git push origin "$NEW_TAG"
