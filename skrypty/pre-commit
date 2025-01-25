@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Automatyczny commit uruchomiony"
+git add .
+git commit -m "Automatyczny commit z hookiem"
