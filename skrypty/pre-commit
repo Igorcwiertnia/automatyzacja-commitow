@@ -6,9 +6,14 @@ if git diff --cached --quiet; then
     exit 0
 fi
 
-# Wyświetlenie komunikatu ostrzegawczego
-echo "Automatyczny commit: Wykryto zmiany w stagingu, ale hook nie wykona automatycznego commitu, aby uniknąć problemów z HEAD."
+# Wyświetlenie komunikatu dla użytkownika
+echo "Pre-commit: Wykryto zmiany w stagingu. Upewnij się, że wszystko jest gotowe do commitu."
 
-# Możesz dodać sprawdzenie stylu kodu lub inne akcje, ale nie wykonywać commitu w hooku.
+# Możesz dodać więcej walidacji, np.:
+# - Sprawdzenie stylu kodu
+# - Uruchomienie testów jednostkowych
+# - Sprawdzenie formatowania plików
+
+# Wyjście z sukcesem (bez automatycznego commitu)
 exit 0
 
