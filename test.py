@@ -1,0 +1,2 @@
+def bledny: 
+	dzien dobry
