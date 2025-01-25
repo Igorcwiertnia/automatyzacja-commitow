@@ -6,16 +6,9 @@ if git diff --cached --quiet; then
     exit 0
 fi
 
-# Unikamy zapętlenia - sprawdzamy, czy commit pochodzi od hooka
-if git log -1 --pretty=%B | grep -q "[HOOK]"; then
-    echo "Hook pre-commit wykrył automatyczny commit. Pomijam..."
-    exit 0
-fi
+# Wyświetlenie komunikatu ostrzegawczego
+echo "Automatyczny commit: Wykryto zmiany w stagingu, ale hook nie wykona automatycznego commitu, aby uniknąć problemów z HEAD."
 
-# Wyświetlamy informację o uruchomieniu hooka
-echo "Automatyczny commit uruchomiony"
-
-# Dodajemy pliki i wykonujemy commit (z flagą --no-verify, aby uniknąć pętli)
-git add .
-git commit -m "[HOOK] Automatyczny commit z pre-commit" --no-verify
+# Możesz dodać sprawdzenie stylu kodu lub inne akcje, ale nie wykonywać commitu w hooku.
+exit 0
 

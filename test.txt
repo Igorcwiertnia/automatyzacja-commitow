@@ -4,3 +4,4 @@ Kolejny test poprawki
 test bez hooka
 poprawa automatyzacji
 poprawa automatyzacji2
+Test kolejny
