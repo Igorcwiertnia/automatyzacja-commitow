@@ -1,15 +1,19 @@
 Hash,Author,Date,Message
-c0a948757b24f82ddbd74e05b11d7dd43dc17590,Igor Cwiertnia,11 minut temu,2plik testowy
-4eaa8fbed64c9896fed6ad087fdc3e773f22eda7,Igor Cwiertnia,2 godziny temu,[HOOK] Automatyczny commit z pre-commit
-af1d8669c2be895180eabdc2e96ebe749496a338,Igor Cwiertnia,2 godziny temu,poprawiona konfiguracja flake8
-2965a00880152cac45688208e57d0d01b544b293,Igor Cwiertnia,2 godziny temu,[HOOK] Automatyczny commit z pre-commit
-053cc0acffa07f28c5b58fb3c1d5520fa5405bbd,Igor Cwiertnia,2 godziny temu,Test pre-push hook
+53f847d47200a17b26dfac9f7e4fd15a1a93fb88,Igor Cwiertnia,9 minut temu,zly plik.py
+12b9a34275b04ce6cf68373ed2594ba20794dd43,Igor Cwiertnia,16 minut temu,[HOOK] Automatyczny commit z pre-commit
+e1e3eb42f5e6a98fef845c2876f2f4248b9f88f3,Igor Cwiertnia,17 minut temu,dodanie pliku py
+706d00087742d89e1b1b27a4f318534b1d47b16d,Igor Cwiertnia,20 minut temu,[HOOK] Automatyczny commit z pre-commit
+c0a948757b24f82ddbd74e05b11d7dd43dc17590,Igor Cwiertnia,36 minut temu,2plik testowy
+4eaa8fbed64c9896fed6ad087fdc3e773f22eda7,Igor Cwiertnia,3 godziny temu,[HOOK] Automatyczny commit z pre-commit
+af1d8669c2be895180eabdc2e96ebe749496a338,Igor Cwiertnia,3 godziny temu,poprawiona konfiguracja flake8
+2965a00880152cac45688208e57d0d01b544b293,Igor Cwiertnia,3 godziny temu,[HOOK] Automatyczny commit z pre-commit
+053cc0acffa07f28c5b58fb3c1d5520fa5405bbd,Igor Cwiertnia,3 godziny temu,Test pre-push hook
 bfbe5caf7b7e1b2c0b39d927848d24cd91a28342,Igor Cwiertnia,3 godziny temu,[AUTO] Automatyczny commit
 dd801659ece5328d133097a54ec9da61565e908c,Igor Cwiertnia,3 godziny temu,poprawiony test
 940f45f50625bc4a544ed887086ce4608c689e3f,Igor Cwiertnia,3 godziny temu,[HOOK] Automatyczny commit z pre-commit
 a3f42b331d64009712ac752e2512f62ce7aa1159,Igor Cwiertnia,3 godziny temu,poprawiony hook2
 ecb6604dce3ea66c167e6e8d9b04109db3c26772,Igor Cwiertnia,3 godziny temu,[HOOK] Automatyczny commit z pre-commit
-c6b1d380f8c7e8cf3ce6fd05502dd6f6f86332b8,Igor Cwiertnia,3 godziny temu,Dodano testowy plik
+c6b1d380f8c7e8cf3ce6fd05502dd6f6f86332b8,Igor Cwiertnia,4 godziny temu,Dodano testowy plik
 3cd7f80a7cd7937d4887d7b5cea01ed6771745ac,Igor Cwiertnia,4 godziny temu,Dodano raport do projektu
 cce3eb49e5e21dc4cddd54ce9b96c2dfeec4551b,Igor Cwiertnia,4 godziny temu,Dodano analize problemow z dlugimi galeziami
 0d60488e0f5610ec4f757c0c83af9729c993d6f1,Igor Cwiertnia,4 godziny temu,Dodano pipeline CI/CD
