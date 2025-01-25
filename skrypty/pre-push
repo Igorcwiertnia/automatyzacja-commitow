@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Aktywuj wirtualne środowisko
+source ./venv/bin/activate
+
 echo "Uruchamianie testów jednostkowych..."
 if ! pytest; then
     echo "Testy jednostkowe nie przeszły. Push zatrzymany."
@@ -14,3 +17,4 @@ fi
 
 echo "Wszystko OK. Push kontynuowany."
 exit 0
+
