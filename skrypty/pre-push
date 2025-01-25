@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Uruchamianie testów jednostkowych..."
+if ! pytest; then
+    echo "Testy jednostkowe nie przeszły. Push zatrzymany."
+    exit 1
+fi
+
+echo "Sprawdzanie stylu kodu..."
+if ! flake8 .; then
+    echo "Styl kodu niezgodny z wytycznymi. Popraw przed pushem."
+    exit 1
+fi
+
+echo "Wszystko OK. Push kontynuowany."
+exit 0
