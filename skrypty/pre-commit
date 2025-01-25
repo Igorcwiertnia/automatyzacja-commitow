@@ -1,4 +1,21 @@
 #!/bin/bash
+
+# Sprawdzamy, czy w stagingu są pliki do zatwierdzenia
+if git diff --cached --quiet; then
+    echo "Brak zmian w stagingu. Hook pre-commit zakończony."
+    exit 0
+fi
+
+# Unikamy zapętlenia - sprawdzamy, czy commit pochodzi od hooka
+if git log -1 --pretty=%B | grep -q "[HOOK]"; then
+    echo "Hook pre-commit wykrył automatyczny commit. Pomijam..."
+    exit 0
+fi
+
+# Wyświetlamy informację o uruchomieniu hooka
 echo "Automatyczny commit uruchomiony"
+
+# Dodajemy pliki i wykonujemy commit (z flagą --no-verify, aby uniknąć pętli)
 git add .
-git commit -m "Automatyczny commit z hookiem"
+git commit -m "[HOOK] Automatyczny commit z pre-commit" --no-verify
+

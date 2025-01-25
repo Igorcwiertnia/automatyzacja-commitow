@@ -1,1 +1,5 @@
 Testowy plik
+Kolejna testowa zmiana
+Kolejny test poprawki
+test bez hooka
+poprawa automatyzacji
