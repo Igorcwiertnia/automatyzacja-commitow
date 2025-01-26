@@ -1,2 +1,2 @@
 def przyklad():
-    print("test funkcji")
+    print("test funkcjii")
