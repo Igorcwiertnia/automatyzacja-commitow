@@ -4,6 +4,7 @@ import pandas as pd
 
 # Wczytaj dane
 df = pd.read_csv("commit_report.csv")
+print(df['Author'].unique())  # Wyświetl unikalne wartości w kolumnie Author
 
 # Tworzenie aplikacji
 app = dash.Dash(__name__)
